@@ -1,108 +1,187 @@
+@font-face{
+    font-family: "Poppins";
+    src:local("Poppins-Medium"),
+        local("Poppins-Regular"),  
+            url("../assets/fonts/Poppins-Medium.ttf");
+}
+
 :root
     {
-        --very-light-pink: #C7C7C7;
-        --text-input-field: #F7F7F7;
-        --hospital-green: #ACD9B2;
-        --strong-hospital-green: #82db8e;
-        --dark-bg: #262322;
-        --light-bg: #F2E5D7;
-        --strong-orange: #ff9500;
-        --low-orange: #fcb045;
-        --text-color: #FFFFFF;
-        --black: #000000;
-        --small: 14x;
-        --medium: 16px;
-        --large: 18px;
+       --primary: #5C62EC;
+       --hover: #3C40AE;
+       --accent: #85BFD1;
+       --gray: #A0A0A1;
+       --filling: #1C1E22;
+       --borders: #26292D;
+       --white: #FFFFFF;
+       --background: #17171B;
     }
   
 
-    
+   html
+   {
+       font-size: 62.5%;
+   } 
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow', serif, sans-serif;
+    font-family: 'Poppins', serif, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
 }
 
-.main-header-section
+body
 {
-    display: flex;
-    align-items: center;
+  
+    background-color: var(--background);
+}
+
+header{
     width: 100%;
-    height: 600px;
-    min-width: 375px;
-    max-width: 750px;
-    
-    
+    height: 60px;
+   
+}
+header ul 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0 20px 0;
+    border-bottom: 1px solid var(--borders);
+    font-size: 1.6rem;
+
 }
 
-.main-header--info-container
+/* Cambiamos de seccion. Termina el header, inicia el primer section del main. */
+
+.main-section--hero
 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section--info-container
+{
+    width: 100%;
+    height: inherit;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 250px;
-    padding-left: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
     
-
 }
 
-.info-container--title
-{
-    font-size: 50px;
-    color: var(black);
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: -2px;
-    
-
+.info-container--title {
+    font-size: 2.8rem;
+    padding-bottom: 20px;
 }
 
-.info-container--title span
+.info-container--title span:nth-child(1)
 {
-    color: #f26674;
+    color: var(--primary);
+}
+.info-container--subtitle
+{
+    font-size: 1.6rem;
+    padding-bottom: 18px;
 }
 
-
-
-.info-container--button
+.info-container--main-button
 {
-    
-    width: 300px;
-    padding: 20px;
-    font-size: 16px;
     border: none;
-    border-radius: 40px;
-    text-transform: uppercase;
-    background-color: var(--text-input-field);
-    font-weight: bold;
+    background-color: var(--hover);
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-size: 1.2rem;
     cursor: pointer;
-    color: black;
-    margin-top: 30px;
-    box-shadow: 0px 8px 12px rgba(89, 73, 30, 0.30);
-    transition: 0.5s;
+    transition: 0.2s all;
+}
+
+.info-container--secondary-button
+{
     
+    border: 2px solid var(--white);
+    background: transparent;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s all;
 }
 
-.info-container--button a 
+/* Terminan los estilos del header. Inician los estilos de la seccion del portafolio */
+
+.main-section--portafolio
 {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.info-container--button:hover
+.section-portafolio--title
 {
-    box-shadow: 0px 14px 18px rgba(89, 73, 30, 0.3);
+   font-size: 3.2rem;
+   letter-spacing: 3px;
+   padding: 24px 0;
 }
 
-.info-container--button span
+.section-portafolio--container
 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: url(../assets/icons/down-arrow.svg) center/cover no-repeat;
-    margin-left: 6px;
-    
+    width: 95%;
+    height: auto;
+    background-color: var(--filling);
+    border-radius: 5px;
+    border: 1px solid var(--borders);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 270px;
+    height: 400px;
+    background-color: var(--borders);
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+    margin: 50px auto;
+
+}
+.card .card-img--section{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-info--section{
+    padding: 12px 24px;
+    font-size: 1.2rem;
+}
+
+.card .info-section--title
+{
+    line-height: 48px;
+    font-size: 2rem;
+}
+.card .info-section--description
+{
+    line-height: 22px;
+    letter-spacing: 1px;
+
 }
