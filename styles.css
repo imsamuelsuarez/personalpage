@@ -1,0 +1,121 @@
+:root
+    {
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --white: #FFFFFF;
+        --black: #000000;
+        --small: 14x;
+        --medium: 16px;
+        --large: 18px;
+    }
+    
+    body
+    {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: #273B47;
+
+    }
+    .menu
+    {
+        display: none;
+    }
+
+    .logo 
+    {
+        width: 100%;
+        margin-left: 8px;
+
+    }
+
+    .navbar-left ul li a, .navbar-right ul li a
+    {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        
+        padding: 8px;
+        border-radius: 8px;
+        margin: 0 4px;
+        transition: 0.3s;
+
+    }
+
+    .navbar-left .navbar-left-list
+    {
+        margin-left: 16px;
+    }
+
+    .navbar-left ul li a:hover , .navbar-right ul li a:hover
+    {
+        color: var(--white);
+        border: 1px solid var(--white);
+        font-size: var(--medium);
+    }
+    .navbar-left ul, .navbar-right ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    .navbar-left
+    {
+        display: flex;
+
+    }
+
+    .navbar-email
+    {
+        color: var(--very-light-pink);
+        font-size: var(--small);
+        margin-right: 16px;
+
+    }
+
+    .navbar-shopping-cart
+    {
+        position: relative;
+        margin-right: 16px;
+    }
+
+    .navbar-shopping-cart div
+    {
+        border-radius: 12px;
+        background-color: var(--hospital-green);
+        width: 12px;
+        height: 12px;
+        font-size: 9px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+ @media (max-width: 640px)
+ {
+     .menu
+     {
+         display: block;
+         margin-left: 16px;
+     }
+
+     .navbar-left ul
+     {
+        display: none;
+     }
+
+     .navbar-email
+     {
+         display: none;
+     }
+ }
