@@ -21,6 +21,7 @@
    html
    {
        font-size: 62.5%;
+       scroll-behavior: smooth;
    } 
 *
 {
@@ -84,7 +85,7 @@ header ul
 }
 
 .info-container--title {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     padding-bottom: 20px;
 }
 
@@ -94,7 +95,7 @@ header ul
 }
 .info-container--subtitle
 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding-bottom: 18px;
 }
 
@@ -104,7 +105,7 @@ header ul
     background-color: var(--hover);
     padding: 12px 32px;
     border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: 0.2s all;
 }
@@ -116,7 +117,7 @@ header ul
     background: transparent;
     padding: 12px 28px;
     border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: 0.2s all;
 }
@@ -126,11 +127,16 @@ header ul
 .main-section--portafolio
 {
     width: 100%;
+    padding: 12px 48px;
+    text-align: center;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--filling);
+    border-radius: 5px;
+    border: 1px solid var(--borders);
 }
 
 .section-portafolio--title
@@ -139,14 +145,18 @@ header ul
    letter-spacing: 3px;
    padding: 24px 0;
 }
+.section-portafolio--paragraph
+{
+    font-size: 1.6rem;
+}
 
 .section-portafolio--container
 {
-    width: 95%;
+    width: 100%;
+    min-width: 320px;
     height: auto;
-    background-color: var(--filling);
-    border-radius: 5px;
-    border: 1px solid var(--borders);
+
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,6 +170,8 @@ header ul
     border: 1px solid var(--gray);
     border-radius: 20px;
     margin: 50px auto;
+    cursor: pointer;
+    text-align: left;
 
 }
 .card .card-img--section{
@@ -176,8 +188,10 @@ header ul
 
 .card .info-section--title
 {
-    line-height: 48px;
-    font-size: 2rem;
+    
+    letter-spacing: 1.5px;
+    padding-bottom: 4px;
+    font-size: 2.2rem;
 }
 .card .info-section--description
 {
