@@ -86,7 +86,7 @@ header ul
 
 .info-container--title {
     font-size: 3.2rem;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
 }
 
 .info-container--title span:nth-child(1)
@@ -127,6 +127,7 @@ header ul
 .main-section--portafolio
 {
     width: 100%;
+    min-width: 320px;
     padding: 12px 48px;
     text-align: center;
     height: auto;
@@ -147,6 +148,7 @@ header ul
 }
 .section-portafolio--paragraph
 {
+    color: var(--gray);
     font-size: 1.6rem;
 }
 
@@ -155,16 +157,15 @@ header ul
     width: 100%;
     min-width: 320px;
     height: auto;
-
-    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    overflow-y: scroll;
 }
 
 .card {
     width: 270px;
+    min-width: 260px;
     height: 400px;
     background-color: var(--borders);
     border: 1px solid var(--gray);
@@ -172,6 +173,7 @@ header ul
     margin: 50px auto;
     cursor: pointer;
     text-align: left;
+    
 
 }
 .card .card-img--section{
