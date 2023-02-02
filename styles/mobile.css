@@ -1,0 +1,201 @@
+@font-face{
+    font-family: "Poppins";
+    src:local("Poppins-Medium"),
+        local("Poppins-Regular"),  
+            url("../assets/fonts/Poppins-Medium.ttf");
+}
+
+:root
+    {
+       --primary: #5C62EC;
+       --hover: #3C40AE;
+       --accent: #85BFD1;
+       --gray: #A0A0A1;
+       --filling: #1C1E22;
+       --borders: #26292D;
+       --white: #FFFFFF;
+       --background: #17171B;
+    }
+  
+
+   html
+   {
+       font-size: 62.5%;
+       scroll-behavior: smooth;
+   } 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+
+body
+{
+  
+    background-color: var(--background);
+}
+
+header{
+    width: 100%;
+    height: 60px;
+   
+}
+header ul 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0 20px 0;
+    border-bottom: 1px solid var(--borders);
+    font-size: 1.6rem;
+
+}
+
+/* Cambiamos de seccion. Termina el header, inicia el primer section del main. */
+
+.main-section--hero
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section--info-container
+{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+.info-container--title {
+    font-size: 3.2rem;
+    padding-bottom: 20px;
+}
+
+.info-container--title span:nth-child(1)
+{
+    color: var(--primary);
+}
+.info-container--subtitle
+{
+    font-size: 1.8rem;
+    padding-bottom: 18px;
+}
+
+.info-container--main-button
+{
+    border: none;
+    background-color: var(--hover);
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.info-container--secondary-button
+{
+    
+    border: 2px solid var(--white);
+    background: transparent;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+/* Terminan los estilos del header. Inician los estilos de la seccion del portafolio */
+
+.main-section--portafolio
+{
+    width: 100%;
+    padding: 12px 48px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--filling);
+    border-radius: 5px;
+    border: 1px solid var(--borders);
+}
+
+.section-portafolio--title
+{
+   font-size: 3.2rem;
+   letter-spacing: 3px;
+   padding: 24px 0;
+}
+.section-portafolio--paragraph
+{
+    font-size: 1.6rem;
+}
+
+.section-portafolio--container
+{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 270px;
+    height: 400px;
+    background-color: var(--borders);
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+    margin: 50px auto;
+    cursor: pointer;
+    text-align: left;
+
+}
+.card .card-img--section{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-info--section{
+    padding: 12px 24px;
+    font-size: 1.2rem;
+}
+
+.card .info-section--title
+{
+    
+    letter-spacing: 1.5px;
+    padding-bottom: 4px;
+    font-size: 2.2rem;
+}
+.card .info-section--description
+{
+    line-height: 22px;
+    letter-spacing: 1px;
+
+}
