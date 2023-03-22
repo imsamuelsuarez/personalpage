@@ -195,6 +195,30 @@ header ul
     padding-bottom: 4px;
     font-size: 2.2rem;
 }
+
+.card .stack-list {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+.card .stack-list li {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.card .stack-list li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
 .card .info-section--description
 {
     line-height: 22px;
