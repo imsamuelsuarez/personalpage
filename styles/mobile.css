@@ -157,10 +157,10 @@ header ul
 {
     display: flex;
     width: 100%;
-    max-width: 390px;
+    max-width: 400px;
     justify-content: space-between;
     height: calc(auto + 100px);
-    gap: 30px;
+    gap: 60px;
     overflow-x: scroll;
     overscroll-behavior: contain;
     scroll-snap-type: x proximity;
