@@ -157,7 +157,7 @@ header ul
 {
     display: flex;
     width: 100%;
-    max-width: 350px;
+    max-width: 390px;
     justify-content: space-between;
     height: calc(auto + 100px);
     gap: 30px;
@@ -167,7 +167,7 @@ header ul
 }
 
 .card {
-    width: 290px;
+    width: 270px;
     min-width: 300px;
     height: 500px;
     background-color: var(--borders);
