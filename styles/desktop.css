@@ -7,4 +7,10 @@
         max-width: 90%;
         overflow-x: visible;
     }
+    .card {
+        width: 320px;
+    }
+    .card .info-section--description{
+        line-height: 28px;
+    }
  }
