@@ -156,10 +156,10 @@ header ul
 .section-portafolio--container
 {
     display: flex;
-    width: 100%;
+    min-width: 390px;
     max-width: 400px;
     justify-content: space-between;
-    height: calc(auto + 100px);
+    /* height: calc(auto + 100px); */
     gap: 60px;
     overflow-x: scroll;
     overscroll-behavior: contain;
