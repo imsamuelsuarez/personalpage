@@ -247,5 +247,6 @@ transition: all .4s ease;
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
+    line-height: 28px;
 
 }
