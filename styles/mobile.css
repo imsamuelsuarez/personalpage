@@ -90,7 +90,7 @@ header ul
 
 .main-hero--img{
     background-size: cover;
-    background-position: center ;
+    background-position: center;
 }
 
 .info-container--title {
@@ -104,7 +104,8 @@ header ul
 }
 .info-container--subtitle
 {
-    font-size: clamp(1.6rem, 4vw, 2.2rem);;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    max-width: 300px;
     padding-bottom: 18px;
 }
 
@@ -112,9 +113,9 @@ header ul
 {
     border: none;
     background-color: var(--hover);
-    padding: 12px 32px;
+    padding: clamp(1.2rem, 4vw, 2.4rem) clamp(3.2rem, 5vh, 6.4rem);
     border-radius: 4px;
-    font-size: 1.8rem;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
     cursor: pointer;
     transition: 0.2s all;
 }
@@ -124,9 +125,9 @@ header ul
     
     border: 2px solid var(--white);
     background: transparent;
-    padding: 12px 28px;
+    padding: clamp(1.2rem, 4vw, 2.4rem) clamp(3.2rem, 5vh, 6.4rem);
     border-radius: 4px;
-    font-size: 1.8rem;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
     cursor: pointer;
     transition: 0.2s all;
 }
