@@ -1,0 +1,10 @@
+
+
+@media (min-width: 900px) { 
+
+    .section-portafolio--container{
+        justify-content: space-evenly;
+        max-width: 90%;
+        overflow-x: visible;
+    }
+ }

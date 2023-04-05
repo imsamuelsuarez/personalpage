@@ -167,9 +167,9 @@ header ul
 }
 
 .card {
-    width: 270px;
-    min-width: 260px;
-    height: 400px;
+    width: 290px;
+    min-width: 300px;
+    height: 500px;
     background-color: var(--borders);
     border: 1px solid var(--gray);
     border-radius: 20px;
@@ -246,5 +246,6 @@ transition: all .4s ease;
     line-height: 22px;
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 
 }
