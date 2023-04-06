@@ -2,6 +2,7 @@
 
 @media (min-width: 784px) { 
 
+
     .main-section--hero{
         display: flex;
         justify-content: center;
@@ -31,11 +32,29 @@
         height:  clamp(300px, 50vw, 700px);
     }
 
+    .onlyVisibleInMobile{
+        display: none;
+      }
+
  }
-/* 
- @media  (min-width: 1200px){
-    .main-hero--img {
-        width: 700px;
-        height: 700px;
-    }
- } */
+
+ @media  (min-width: 1024px){
+    .main-section--portafolio{
+    padding: 0 0;
+    height: 90vh;
+
+  }
+
+  .section-portafolio--container{
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    overflow: visible;
+  }
+
+  .card{
+    width: clamp(400px, 40vw, 700px);
+   
+  }
+
+ }

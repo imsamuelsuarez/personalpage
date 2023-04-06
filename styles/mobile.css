@@ -166,10 +166,10 @@ header ul
 .section-portafolio--container
 {
     display: flex;
-    min-width: 390px;
-    max-width: 400px;
+    min-width: 490px;
+    max-width: 500px;
     justify-content: space-between;
-    /* height: calc(auto + 100px); */
+    height: auto;
     gap: 60px;
     overflow-x: scroll;
     overscroll-behavior: contain;
@@ -177,14 +177,12 @@ header ul
 }
 
 .card {
-    width: 270px;
-    min-width: 300px;
+    min-width: 330px;
     height: 500px;
     background-color: var(--borders);
     border: 1px solid var(--gray);
     border-radius: 20px;
     margin: 50px auto;
-    cursor: pointer;
     text-align: left;
     scroll-snap-align: center;
     transition: all .5s ease;
@@ -193,10 +191,10 @@ header ul
 }
 
 .section-portafolio--container article:nth-child(1){
-    margin-left: 40px;
+    margin-left: 90px;
 }
 .section-portafolio--container article:nth-child(3){
-    margin-right: 40px;
+    margin-right: 90px;
 }
 
 .card:hover {
@@ -210,22 +208,35 @@ transition: all .4s ease;
 
 .card .card-img--section{
     width: 100%;
-    height: 35%;
-    background-color: black;
+    height: 30%;
+    background-color: white;
     border-radius: 20px 20px 0 0;
+   
+}
+.card-img--section img{
+    
+   width: 100%;
+   height: 100%;
+   border-radius: 20px 20px 0 0;
 }
 
+
 .card .card-info--section{
+    display: grid;
+    width: 100%;
+    height: 70%;
     padding: 12px 24px;
     font-size: 1.2rem;
 }
 
 .card .info-section--title
 {
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
     letter-spacing: 1.5px;
-    padding-bottom: 4px;
-    font-size: 2.2rem;
+    font-size: clamp(2.2rem, 2vw, 2.6rem);
 }
 
 .card .stack-list {
@@ -236,6 +247,7 @@ transition: all .4s ease;
     justify-content: flex-start;
     align-items: center;
     gap: 7px;
+    padding-bottom: 16px;
 }
 .card .stack-list li {
     width: 20px;
@@ -247,16 +259,27 @@ transition: all .4s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .card .info-section--description
-{
+{   
     /* line-height: 22px; */
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 28px;
 
+}
+ .info-section--more{
+    display: grid;
+    place-content: center;
+    align-self: flex-end;
+    width: 100%;
+    height: 100px;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    /* color: rgba(203, 218, 223, 0.07); */
+    color: rgb(203, 218, 223);
+    transition: 0.2 ease;
 }

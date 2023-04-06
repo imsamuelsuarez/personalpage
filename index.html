@@ -31,7 +31,7 @@
                 <p class="info-container--subtitle">Me gusta crear cosas utiles con software para el internet.</p>
 
            <a href="#projects"class="info-container--main-button">Ver Proyectos</a>
-           <button class="info-container--secondary-button"> Descargar Cv</button>
+           <a class="info-container--secondary-button" id="cvBtn" href="./assets/samuelsuarez-cv.pdf" download="./assets/samuelsuarez-cv.pdf"> Descargar Cv</a>
        </div>
 
        <div class="hero-container">
@@ -64,14 +64,15 @@
    <section id="projects" class="main-section--portafolio">
        <div class="section-portfolio--titles">
         <h2 class="section-portafolio--title">Proyectos</h2>
-        <p class="section-portafolio--paragraph">Soluciones de Software a problemas reales</p>
+        <p class="section-portafolio--paragraph">Soluciones de Software a problemas reales.</p>
+        <p class="onlyVisibleInMobile section-portafolio--paragraph" style="padding-top: 24px;"> Desliza para ver mas. </p>
        </div>
   
        <div class="section-portafolio--container">
         
 
             <article class="card">
-                <figure class="card-img--section"></figure>
+                <figure class="card-img--section"><img src="./assets/img/autosEstacionados.jpg" alt="Pila de autos en un estacionamiento"></figure>
                 <div class="card-info--section">
                     <h2 class="info-section--title"> Conta Parking</h2>
                     <ul class="stack-list">
@@ -88,6 +89,8 @@
                    
                     </ul>
                     <p class="info-section--description">Aplicacion de Escritorio en Javascript utilizando Electron.js para crear un sistema de organizacion, gestion y control para un estacionamiento de autos.</p>
+
+                    <a href="https://github.com/imsamuelsuarez/overnightCars" class="info-section--more">Saber mas</a>
                 </div>
             </article>
  
@@ -95,28 +98,58 @@
 
 
     <article class="card">
-        <figure class="card-img--section"></figure>
+        <figure class="card-img--section"><img src="./assets/img/airplane.jpg" alt="Avion aterrizando"></figure>
         <div class="card-info--section">
-            <h2 class="info-section--title"> Calculadora Especial </h2>
-            <p class="info-section--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit harum sed ab nam magnam vero quam impedit eos molestias dolorum ea, ad, iure inventore saepe aliquid quis velit ex neque?</p>
+            <h2 class="info-section--title"> Calculadora de Pernoctas </h2>
+            <ul class="stack-list">
+                   
+                <li>
+                    <i class="fa-brands fa-square-js fa-lg" style="color: #f5c211;" title="Javascript"></i>
+                </li>
+
+                <li>  <i class="fa-brands fa-html5 fa-lg" style="color: #ff7800;" title="HTML5"></i></li>
+                <li><i class="fa-brands fa-css3 fa-lg" style="color: #3584e4;" title="CSS3"></i></li>
+
+                <li><i class="fa-brands fa-node-js fa-lg" style="color: #26a269;" title="Node.js"></i></li>
+
+              
+               </ul>
+            <p class="info-section--description">Pagina web creada para calcular el precio a pagar de los vehiculos pernoctas del estacionamiento del Aeropuerto.</p>
+
+            <a href="https://imsamuelsuarez.github.io/overnightCars/" class="info-section--more">Saber mas</a>
         </div>
+        
     </article>
 
 
            
 
     <article class="card">
-        <figure class="card-img--section"></figure>
+        <figure class="card-img--section"><img src="./assets/img/codigo-html.jpg" alt="Codigo HTML en un monitor"></figure>
         <div class="card-info--section">
-            <h2 class="info-section--title">Proyecto 3</h2>
-            <p class="info-section--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit harum sed ab nam magnam vero quam impedit eos molestias dolorum ea, ad, iure inventore saepe aliquid quis velit ex neque?</p>
+            <h2 class="info-section--title">Pagina Web</h2>
+            <ul class="stack-list">
+                   
+                <li>
+                    <i class="fa-brands fa-square-js fa-lg" style="color: #f5c211;" title="Javascript"></i>
+                </li>
+
+                <li>  <i class="fa-brands fa-html5 fa-lg" style="color: #ff7800;" title="HTML5"></i></li>
+                <li><i class="fa-brands fa-css3 fa-lg" style="color: #3584e4;" title="CSS3"></i></li>
+
+                <li><i class="fa-brands fa-node-js fa-lg" style="color: #26a269;" title="Node.js"></i></li>
+
+              
+               </ul>
+            <p class="info-section--description">Pagina Web Estatica para presentar mis habilidades en desarrollo web.</p>
+
+                <a href="https://github.com/imsamuelsuarez/personalpage" class="info-section--more">Saber mas</a>
+    
+
+            </div>
         </article>
-
-      
-        </div>
-       </div>
-
    </section>
    <script src="https://kit.fontawesome.com/55cf98906f.js" crossorigin="anonymous"></script>
+   <script src="./index.js"></script>
 </body>
 </html>
